@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #111D5E;
+    color: #C0E218;
+}
+
+/* navbar */
+
+header{
+    background-color: #C70039;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav ul{
+    display: flex;
+}
+
+header a{
+    text-decoration: none;
+    color: inherit;
+}
+header ul li{
+    list-style: none;
+    margin-right: 2.5rem;
+    font-weight: 600;
+}
+header ul li:hover{
+    color: #C0E218;
+}
+#active{
+    text-decoration: underline;
+    color: #C0E218;
+}
+@media screen and (max-width: 768px) {
+    header,nav ul{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding-left: 5px;
+    }
+}
+
+/* main section */
+
+main{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label{
+    display: block;
+}
+.input_fields,.btn,#output{
+    margin-top: 15px;
+}
+.input_fields input{
+    border: solid 2px #C0E218;
+    border-radius: 3px;
+    height: 25px;
+}
+.btn{
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    color: #111D5E;
+    background-color: #C0E218;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+    transition: ease-in-out;
+}
+.btn:hover{
+    background: #C70039;
+    color: #fff;
+}
+#output,p{
+    text-align: center;
+}
+.input_choices{
+    display: flex;
+    justify-content: space-evenly;
+}
+#triangle_img{
+    width: 14rem;
+    height: 14rem;
+    margin-top: -70px;
+}
+.sides{
+    display: flex;
+}
+.sides .input_fields{
+    margin: auto 10px;
+}
+@media screen and (max-width: 768px) {
+    main{
+        width: 80%;
+    }
+    .sides{
+        flex-direction: column;
+    }
+    .sides .input_fields{
+        margin: 10px auto;
+    }
+}
+#formula{
+    border: dashed 2px #C70039;
+    color: #C70039;
+    background-color: #C0E218;
+    padding: 10px 20px;
+}

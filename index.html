@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Triangle</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Learn Triangle</h1></a>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="active">Is Triangle?</a></li>
+                <li><a href="triangleQuiz.html">Triangle Quiz</a></li>
+                <li><a href="hypotenus.html">Calculate Hypotenus</a></li>
+                <li><a href="Area.html">Area</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="heading">Is Triangle?</h2>
+        <div class="input_fields">
+            <label for="angle1">Angle1 : </label>
+            <input type="number" class="angle_input">
+        </div>
+        <div class="input_fields">
+            <label for="angle2">Angle2 : </label>
+            <input type="number" class="angle_input">
+        </div>
+        <div class="input_fields">
+            <label for="angle3">Angle3 : </label>
+            <input type="number" class="angle_input">
+        </div>
+        <button class="btn" id="isTriangle_Btn">Is Triangle?</button>
+        <div id="output"></div>
+    </main>
+    <!-- javascript -->
+    <script src="js/isTriangle.js"></script>
+</body>
+</html>
